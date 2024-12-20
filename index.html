@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+</head>
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        /* margin: 10px 5px; */
+        margin: 10px auto;
+        height: 25vh;
+        width: 90vw;
+        background-color: rgb(14, 14, 14);
+        border: 2px solid black;
+        
+    }
+
+    .banner {
+        position: relative;
+    }
+    .banner p{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.788);
+        position: absolute;
+        z-index: 10;
+        margin-left: 11.8vw;
+        margin-top: -2.9vw;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .card {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .title {
+        display: flex;
+        /* gap: 60px; */
+        position: relative;
+    }
+
+    .title img {
+        margin-top: -18px;
+        position: absolute;
+        right: -100px;
+        top: 30px;
+    }
+    
+    img {
+        border-radius: 15px;  
+    }
+
+    h2 {
+        color: white;
+        font-weight: 600;
+        margin-top: 8px;
+        line-height: 30px;
+    }
+
+    .small {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: rgb(180, 172, 172);
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+
+    .points {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: grey;
+    }
+
+    .channel {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+        
+    }
+
+    .channel img {
+        width: 30px;
+        margin-left: 20px;
+    }
+    .channel p{
+        color: white;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="banner">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw" alt="">
+                <p>31:22</p>
+            </div>
+
+        
+            <div class="content">
+                <div class="title">
+                        <h2>Installing VS Code & How Website Work | Sigma Web Development Course - <br>Tutorial #1</h2>
+                        <img src="dot.svg" alt="">
+                </div>
+
+                <div class="small">
+                    <p>CodeWithHarry</p>
+                    <div class="points"></div>
+                    <p>727K views</p>
+                    <div class="points"></div>
+                    <p>2 months ago</p>
+                </div>
+
+                <div class="channel">
+                    <img src="https://yt3.ggpht.com/ytc/AIdro_kX3sdbuu3KFmRPsmlu0R5Rx_BhpxwupjtvJmkEdNfla7w=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    <p>CodeWithHarry</p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
